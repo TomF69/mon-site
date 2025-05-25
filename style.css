@@ -2,41 +2,67 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #222;
-    background-color: #f9f9f9;
+    background-color: #0e0e0e;
+    color: #e0e0e0;
 }
 header {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #fff;
+    background-color: #111;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    gap: 1rem;
+header h1 {
+    font-size: 2.5rem;
 }
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-}
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #eee;
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
 }
 .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
-    background-color: #004080;
+    background-color: #0066cc;
     color: white;
     text-decoration: none;
     border-radius: 4px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 8px;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+}
+footer a {
+    color: #66ccff;
+    text-decoration: none;
 }
