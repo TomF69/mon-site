@@ -77,3 +77,12 @@ footer a {
   color: #66ccff;
   text-decoration: none;
 }
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0066cc;
+  margin-bottom: 1rem;
+}
