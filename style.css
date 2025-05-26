@@ -35,7 +35,7 @@ header p {
 .card {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* hauteur = largeur → carré */
+    padding-top: 100%; /* carré */
     overflow: hidden;
 
     background-size: cover;
@@ -46,11 +46,13 @@ header p {
     transition: transform 0.3s ease;
     display: block;
 }
+
 .card:hover {
     transform: scale(1.03);
 }
+
 .card h2 {
-     position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
