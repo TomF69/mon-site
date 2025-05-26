@@ -27,10 +27,15 @@ header p {
     border-radius: 4px;
 }
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 .card {
     display: flex;
@@ -56,6 +61,23 @@ header p {
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 1rem;
+}
+.subcards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subcard {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+.subcard:hover {
+    background-color: #333;
 }
 footer {
     text-align: center;
