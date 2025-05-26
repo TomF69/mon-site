@@ -33,29 +33,33 @@ header p {
     padding: 2rem;
 }
 .card {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* hauteur = largeur → carré */
+    overflow: hidden;
+
     background-size: cover;
     background-position: center;
-    aspect-ratio: 1 / 1;  /* carré parfait */
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
     border-radius: 8px;
-    background-blend-mode: overlay;
     background-color: rgba(0,0,0,0.4);
+    text-decoration: none;
     transition: transform 0.3s ease;
+    display: block;
 }
 .card:hover {
     transform: scale(1.03);
 }
 .card h2 {
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 0.5rem;
-    border-radius: 4px;
+    text-align: center;
     font-size: 1rem;
+    color: white;
 }
 .subcards {
     display: flex;
