@@ -39,7 +39,7 @@ header p {
     text-align: center;
     background-size: cover;
     background-position: center;
-    height: 220px;
+    aspect-ratio: 1 / 1;  /* carré parfait */
     color: white;
     text-decoration: none;
     padding: 1rem;
