@@ -35,5 +35,21 @@
   <footer>
     <p>Email : <a href="mailto:tom.fougeroux@etu.univ-lyon1.fr">tom.fougeroux@etu.univ-lyon1.fr</a></p>
   </footer>
+  <script>
+  const images = document.querySelectorAll('.clickable-img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = "block";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
+</script>
 </body>
 </html>
