@@ -94,11 +94,13 @@ footer a {
   padding: 2rem;
 }
 .image-pair img {
-  width: 300px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
-  object-fit: cover;
   border: 2px solid #333;
 }
+
 .clickable-img {
   cursor: pointer;
   transition: transform 0.3s ease;
